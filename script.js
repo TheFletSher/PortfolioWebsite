@@ -13,3 +13,11 @@ dropdownButton.addEventListener("click", () => {
 dropdownButton.addEventListener("click", () => {
     dropdownMenu.classList.toggle("show");
 });
+
+window.addEventListener("load", () => {
+    const splash = document.getElementById("splash-screen");
+
+    setTimeout(() => {
+    splash.classList.add("fade-out");
+    }, 1000)
+});
