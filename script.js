@@ -36,13 +36,14 @@ window.addEventListener("load", () => {
   }
 });
 
+// Fading back when going to loading another
 document.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
-    fetch(this.href)
-      .then(response => response.text())
-      .then(html => {
-        document.body.innerHTML = html; // Not perfect, but illustrative
-      });
+    e.preventDefault(); // Stop the link from navigating right away
+    document.body.classList.add("fade-out"); // Add fade-out class
+
+    setTimeout(() => {
+      window.location = this.href; // Navigate after fade
+    }, 500); // Match this with your CSS animation duration
   });
 });
