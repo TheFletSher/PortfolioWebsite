@@ -105,22 +105,22 @@ body {
 }
 
 #page > * {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 2s ease-out, transform 2s ease-out;
+  opacity: 1;
+  /* padding-top: 150px; */
+  transition: opacity 2s ease-out, padding-top 2s ease-out;
 }
 
 #page > *.visible {
   opacity: 1;
-  transform: translateY(0);
+  padding-top: 0;
 }
 
 .headshot {
   margin-right: 5vw;
   border-radius: 50%;
   object-fit: cover;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 6px solid rgba(0, 0, 0, 1);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
 }
@@ -178,6 +178,26 @@ body {
   padding-left: 6rem;       /* A little padding to the left */
   color: black;
   display: block; 
+}
+
+.info p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  text-align: left;
+  padding-left: 8rem;
+  max-width: 1000px;
+}
+
+.info a {
+  color: rgb(25, 124, 185);
+  text-decoration: none;
+  text-shadow: 1px 1px 1.5px rgba(0, 0, 0, .7);
+}
+
+.info a:hover {
+  color: rgb(25, 124, 185);
+  background-color: rgba(123, 137, 146, 0.2);
+  border-radius: 10px;
+  /* border: 3px solid rgba(25, 124, 185, 0.2); */
 }
 
 /* Makes buttons stack on top of each other when width too small */
