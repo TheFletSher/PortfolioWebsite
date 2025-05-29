@@ -4,7 +4,7 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY || window.pageYOffset;
 
   // Clamp the background offset to a max of 100
-  const offset = Math.min(scrollY / 3, 100); // max 100%
+  const offset = Math.min(scrollY / 5, 100); // max 100%
   title.style.backgroundPosition = `${offset}% ${offset}%`;
 });
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const elements = [
     {el: document.querySelector("#page > :nth-child(1)"), triggerAt: 300},
     {el: document.querySelector("#page > :nth-child(2)"), triggerAt: 600},
-    {el: document.querySelector("#page > :nth-child(3)"), triggerAt: 900},
+    {el: document.querySelector("#page > :nth-child(3)"), triggerAt: 600},
   ];
 
   let fadedIn = new Set();

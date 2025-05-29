@@ -93,7 +93,9 @@ body {
   -webkit-text-fill-color: transparent;
   margin-top: 1rem;
   margin-left: 1rem;
-  font-size: clamp(4rem, 15vw, 15rem);
+  margin-bottom: 2rem;
+  /* font-size: clamp(4rem, 15vw, 15rem); */
+  font-size: 15vw;
   z-index: 4;
   text-shadow: 6px 6px 8px rgba(255, 255, 255, 0.1);
 }
@@ -117,8 +119,8 @@ body {
 
 #page > * {
   opacity: 0;
-  padding-top: 150px;
-  transition: opacity 2s ease-out, padding-top 2s ease-out;
+  padding-top: 300px;
+  transition: opacity 2s ease-out, padding-top 1.5s ease-out;
 }
 
 #page > *.visible {
@@ -132,7 +134,7 @@ body {
   object-fit: cover;
   width: 250px;
   height: 250px;
-  border: 6px solid rgba(0, 0, 0, 1);
+  border: 8px solid rgba(0, 0, 0, 1);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -146,7 +148,7 @@ body {
 
 .intro {
   display: flex;
-  justify-content: space-between; /* Add this */
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
   flex-wrap: nowrap;
@@ -235,7 +237,7 @@ body {
 
 .info-pic img {
   margin-top: 50px;
-  width: 15%;
+  width: 20%;
   box-shadow: none;
   scale: clamp(0.5, 50%, 1);
 }
