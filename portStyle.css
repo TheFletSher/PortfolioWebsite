@@ -105,8 +105,8 @@ body {
 }
 
 #page > * {
-  opacity: 1;
-  /* padding-top: 150px; */
+  opacity: 0;
+  padding-top: 150px;
   transition: opacity 2s ease-out, padding-top 2s ease-out;
 }
 
@@ -123,6 +123,14 @@ body {
   height: 250px;
   border: 6px solid rgba(0, 0, 0, 1);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.logos {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .intro {
@@ -157,15 +165,15 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  /* flex-wrap: wrap; */
 }
 
 .intro-paragraph h1 {
   padding-top: 3rem;
   text-align: left;
-  font-size: 4rem;        /* Smaller font size for paragraph */
-  margin: 0;                /* Remove default margin */
-  padding-left: 8.4rem;       /* A little padding to the left */
+  font-size: 4rem;
+  margin: 0;
+  padding-left: 8.8rem;
   color: black;
   line-height: 0.6;
   display: block; 
@@ -173,9 +181,9 @@ body {
 
 .intro-paragraph h2 {
   text-align: left;
-  font-size: 7rem;        /* Smaller font size for paragraph */
-  margin: 0;                /* Remove default margin */
-  padding-left: 6rem;       /* A little padding to the left */
+  font-size: 7rem;
+  margin: 0;
+  padding-left: 6rem;
   color: black;
   display: block; 
 }
@@ -184,7 +192,14 @@ body {
   font-size: clamp(1rem, 2.5vw, 2rem);
   text-align: left;
   padding-left: 8rem;
-  max-width: 1000px;
+  max-width: 905px;
+}
+
+.info h1 {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  text-align: left;
+  padding-left: 8rem;
+  max-width: 900px;
 }
 
 .info a {
