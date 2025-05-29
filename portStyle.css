@@ -98,6 +98,17 @@ body {
   text-shadow: 6px 6px 8px rgba(255, 255, 255, 0.1);
 }
 
+#page-wrapper {
+  width: 1800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#page {
+  width: 100%;
+  height: auto;
+}
+
 #page {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -138,7 +149,7 @@ body {
   justify-content: space-between; /* Add this */
   align-items: center;
   margin-top: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 0 2rem;
   gap: 2rem;
 }
@@ -188,31 +199,45 @@ body {
   display: block; 
 }
 
-.info p {
-  font-size: clamp(1rem, 2.5vw, 2rem);
-  text-align: left;
-  padding-left: 8rem;
-  max-width: 905px;
+.info-txt {
+  display: inline-block;
+  float: left;
+  width: 50%;
 }
 
-.info h1 {
-  font-size: clamp(2rem, 2.5vw, 3rem);
+.info-txt p {
+  /* font-size: clamp(1rem, 2.5vw, 2rem); */
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 8rem;
+}
+
+.info-txt h1 {
+  /* font-size: clamp(2rem, 2.5vw, 3rem); */
+  font-size: 3rem;
   text-align: left;
   padding-left: 8rem;
   max-width: 900px;
 }
 
-.info a {
+.info-txt a {
   color: rgb(25, 124, 185);
   text-decoration: none;
   text-shadow: 1px 1px 1.5px rgba(0, 0, 0, .7);
 }
 
-.info a:hover {
+.info-txt a:hover {
   color: rgb(25, 124, 185);
   background-color: rgba(123, 137, 146, 0.2);
   border-radius: 10px;
   /* border: 3px solid rgba(25, 124, 185, 0.2); */
+}
+
+.info-pic img {
+  margin-top: 50px;
+  width: 15%;
+  box-shadow: none;
+  scale: clamp(0.5, 50%, 1);
 }
 
 /* Makes buttons stack on top of each other when width too small */
@@ -241,7 +266,7 @@ body {
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1550px) {
   .headshot {
     width: 200px;
     height: 200px;
